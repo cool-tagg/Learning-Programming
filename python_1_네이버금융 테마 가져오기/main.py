@@ -12,12 +12,12 @@ app = Flask("ThemeStripper")
 
 @app.route("/")
 def home():
-    return render_template("home.html", name = "tagg")
+    return render_template("home.html")
 
 
 @app.route("/hello")
 def hello():
-    return render_template("hello.html")
+    return render_template("hello.html", game = "tagg")
 
 app.run()
 
