@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/tagg/Documents/Learning-Programming/py_2_네이버금융에서 검색한 종목의 현재가 가져오기/VirEn/bin/python3.10" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
